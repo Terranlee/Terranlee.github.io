@@ -19,8 +19,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="google-font/google-font-lato.css" rel="stylesheet" type="text/css">
+    <link href="google-font/google-font-mont.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -199,21 +199,20 @@
                         </td>
                         <td class="col-lg-8">
                             <div class="col-lg-12">
-                                <div class="col-lg-5"><p><b style="font-size:20px">Outline:</b> <br></p></div>
-                                <div class="col-lg-12" style="padding-left:10%">
+                                <div class="col-lg-12">
                                     <p>My research experience in KEG mainly focuses on machine learning and its applications in social network analysis and text mining.</p>
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="col-lg-5"><p><b style="font-size:20px">Projects:</b> <br></p></div>
+                                <div class="col-lg-5"><p><b style="font-size:20px">Related Projects:</b> <br></p></div>
                                 <div class="col-lg-12" style="padding-left:10%">
                                     <p>1. Similarity text retrieval for patent data <br></p>
-                                        <ul>
+                                        <ul style="font-size:18px">
                                             <li>Processed 300 thousand patent documents</li>
                                             <li>Considered both semantic (using LDA) and literal similarity (using q-Gram)</li>
                                         </ul>
                                     <p>2. Sentiment analysis in social network (weibo.com)</p>
-                                        <ul>
+                                        <ul style="font-size:18px">
                                             <li>Used Emoji instead of labeling of sentiment (the traditional source of training data)</li>
                                             <li>Considered the 'social' feature of weibo to obtain a good accuracy</li>
                                         </ul>
@@ -253,25 +252,30 @@
 
                         <td class="col-lg-8">
                             <div class="col-lg-12">
-                                <div class="col-lg-5"><p><b style="font-size:20px">Outline:</b> <br></p></div>
-                                <div class="col-lg-12" style="padding-left:10%">
+                                <div class="col-lg-12">
                                     <p>My research at Imperial College London is related to approximate algorithm and high performance data analysis.</p>
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="col-lg-5"><p><b style="font-size:20px">Projects:</b> <br></p></div>
+                                <div class="col-lg-5"><p><b style="font-size:20px">Research Projects:</b> <br></p></div>
                                 <div class="col-lg-12" style="padding-left:10%">
                                     <p>1. Optimization of DBSCAN clustering algorithm in large scale and high dimension</p>
-                                        <ul>
+                                        <ul style="font-size:18px">
                                             <li>Proposed an approximate clustering algorithm using Locality Sensitive Hashing (LSH)</li>
                                             <li>One order of magnitude faster than the state-of-the-art approximate DBSCAN</li>
                                             <li>Submitted to EDBT 2016, pending review</li>
                                         </ul>
-                                    <p>2. Optimization of Locality sensitive hashing(LSH) using Dataflow Engine</p>
-                                        <ul>
-                                            <li>Used Dataflow Engine, a hetrogeneous computing platform provided by Maxeler</li>
+                                    <p>2. Hardware acceleration of Locality sensitive hashing(LSH)</p>
+                                        <ul style="font-size:18px">
+                                            <li>Used Dataflow Engine, a hetrogeneous computing platform by
+                                            <a href="https://www.maxeler.com/" target="_blank">Maxeler</a>
+                                            </li>
+
                                             <li>Large scale, high dimensional data indexing with high performance</li>
-                                            <li>The project is also availiable on MaxAppGallery</li>
+
+                                            <li>The project is also availiable on 
+                                            <a href="http://appgallery.maxeler.com/#/" target="_blank">MaxAppGallery</a>
+                                            </li>
                                         </ul>
                                 </div>
                             </div>
@@ -285,82 +289,119 @@
     </section>
 
 
-    <section class="success" id="projects">
+    <section id="projects">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12">
                     <h2>Projects</h2>
-                    <hr class="star-light">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12" style="margin-top:20px">
-                    <div class="col-lg-4">
+                <div class="col-lg-12" style="margin-top:30px">
+                    <div class="col-lg-3">
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                            <img src="img/portfolio/cpu.jpg"  alt="" height=230 width=300 /></a>
+                            <img src="img/portfolio/cpu.jpg"  alt="" height=200 width=200 /></a>
                         </div>
                     </div>
                     <div class="col-lg-8">
-
-                        Cache-CPU: MIPS32 Computer Architecture Design
-                        A systematic design of a computer system from hardware to application. Course project of Computer Organization, advised by Dr. Weidong Liu.
-                        Project features:
-                            CPU design using VHDL
-                            Able to run a Unix-like Operating System (UCore)
-                            Decaf-Mind cross platform compiler
-                            More than 100 pages of various documents
+                        <p style="font-size:25px">Cache-CPU: MIPS32 Computer Architecture Design
+                        &nbsp;&nbsp; <a href="https://github.com/JamisHoo/Cache-CPU" target="_blank">[Github]</a>
+                        </p>
+                        <p>Systematic computer system design from hardware to application<br>
+                            <i class="glyphicon glyphicon-user"></i>
+                            &nbsp;&nbsp; Advisor: <a href="http://www.cs.tsinghua.edu.cn/publish/cs/4616/2013/20130424093522669681649/20130424093522669681649_.html" target="_blank">Dr. Weidong Liu</a><br>
+                            <i class="glyphicon glyphicon-user"></i>
+                            &nbsp;&nbsp; Collaborator: Jinming Hu
+                        </p>
+                        
+                        <ul style="font-size:18px">
+                            <li>CPU design using VHDL, able to run a Unix-like Operating System 
+                                <a href="https://github.com/chyyuu/ucore_os_lab" target="_blank">UCore</a>
+                            </li>
+                            <li>
+                            <a href="http://web.stanford.edu/class/cs143/" target="_blank">Decaf-Mind </a>
+                            cross-compiler and applications</li>
+                            <li>More than 100 pages of various documents</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-12" style="margin-top:20px">
-                    <div class="col-lg-4">
+                <div class="col-lg-12" style="margin-top:30px">
+                    <div class="col-lg-3">
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <img src="img/portfolio/sql.jpg"  alt="" height=230 width=300 /></a>
+                            <img src="img/portfolio/sql.jpg"  alt="" height=200 width=200 /></a>
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        OurSQL: Single User Database Management System (DBMS)
-                        6000 lines of C++ code to implement a database. The course project of Introduction to database. Advised by Dr. Jianhua Feng
-                        Project features:
-                            B+Tree index, aggregate queries, relational integrity constraint and inner join on multiple tables.
-                            Almost the same grammar as MySQL.
-                            Portable amoung Linux, Mac OSX and windows
+                        <p style="font-size:25px">OurSQL: Database Management System (DBMS)
+                        &nbsp;&nbsp; <a href="https://github.com/JamisHoo/OurSQL-DBMS" target="_blank">[Github]</a>
+                        </p>
+                        <p>Single User Relational Database<br>
+                            <i class="glyphicon glyphicon-user"></i>
+                            &nbsp;&nbsp; Advisor: <a href="http://dbgroup.cs.tsinghua.edu.cn/fengjh/" target="_blank">Dr. Jianhua Feng</a><br>
+                            <i class="glyphicon glyphicon-user"></i>
+                            &nbsp;&nbsp; Collaborator: Jinming Hu
+                        </p>
+                        
+                        <ul style="font-size:18px">
+                            <li>Support B+Tree index, aggregate queries, relational integrity constraint and inner join on multiple tables</li>
+                            <li>Over 6000 lines of C++ code, portable amoung Linux, Mac OSX and windows</li>
+                            <li>Almost the same grammar as MySQL</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-12" style="margin-top:20px">
-                    <div class="col-lg-4">
+                <div class="col-lg-12" style="margin-top:30px">
+                    <div class="col-lg-3">
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <img src="img/portfolio/search.jpg"  alt="" height=230 width=300 /></a>
+                            <img src="img/portfolio/search.jpg"  alt="" height=200 width=200 /></a>
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        THUSearch: Search Engine for webpages in Tsinghua
-                        A search engine based on Lucene framework, designed for webpages in Tsinghua University. The course peoject of Introduction to Search Engine, advised by Dr. Yiqun Liu
-                        Project features:
-                            Able to search for more than 200 thousands webpages, pictures and files in Tsinghua University.
-                            Implemented BM25 and Pagerank ranking algorithm.
-                            Front-end to back-end design of a whole search engine.
+                        <p style="font-size:25px">THUSearch: Search Engine in Tsinghua
+                        &nbsp;&nbsp; <a href="https://github.com/Terranlee/THUSearch" target="_blank">[Github]</a>
+                        </p>
+                        <p>Search engine based on Lucene<br>
+                            <i class="glyphicon glyphicon-user"></i>
+                            &nbsp;&nbsp; Advisor: <a href="http://www.thuir.org/group/~yqliu/" target="_blank">Dr. Yiqun Liu</a><br>
+                        </p>
+                        
+                        <ul style="font-size:18px">
+                            <li>Able to search for more than 200 thousands webpages, pictures and files in Tsinghua University</li>
+                            <li>Implement BM25 and Pagerank algorithm for ranking</li>
+                            <li>Front-end and back-end design of a whole search engine</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-lg-12" style="margin-top:20px">
-                    <div class="col-lg-4">
+                <div class="col-lg-12" style="margin-top:30px">
+                    <div class="col-lg-3">
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <img src="img/portfolio/graphics.jpg"  alt="" height=230 width=300 /></a>
+                            <img src="img/portfolio/graphics.jpg"  alt="" height=200 width=200 /></a>
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        Computer Graphics and Signal Processing
-                        Several projects about computer graphics and signal processing implemented in C++ and OpenCV
-                        Project features:
-                            Realtime Eulerian Video Magnification: Realtime signal processing algorithm to magnify the slight motions and color changes.
-                            Ray Tracing: 3D render implemented in C++, with features like soft shadow, depth of field and anti aliasing.
-                            Mesh Simplification: Visualization and simplification of triangulated-surface model.
+                        <p style="font-size:25px">Computer Graphics and Signal Processing</p>
+                        <p>Several interesting and appealing projects implemented in C++ and OpenCV
+                        </p>
+                        
+                        <ul style="font-size:18px">
+                            <li>Realtime Eulerian Video Magnification: 
+                            Realtime signal processing algorithm to magnify the slight motions and color changes
+                            &nbsp;&nbsp; <a href="https://github.com/Terranlee/Realtime_EVM" target="_blank">[Github]</a>&nbsp;&nbsp;
+                            <a href="http://people.csail.mit.edu/mrub/vidmag/" target="_blank">[Reference]</a>
+                            </li>
+                            <li>Ray Tracing: 3D render implemented in C++, with features like soft shadow, depth of field and anti aliasing, very similar to a simple openGL
+                            &nbsp;&nbsp; <a href="https://github.com/Terranlee/ray_tracing" target="_blank">[Github]</a>
+                            </li>
+                            <li>Mesh Simplification: Visualization and simplification of triangulated-surface model
+                            &nbsp;&nbsp; <a href="https://github.com/Terranlee/mesh" target="_blank">[Github]</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -410,7 +451,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2014
+                        Copyright &copy; Tianrun 2015
                     </div>
                 </div>
             </div>
